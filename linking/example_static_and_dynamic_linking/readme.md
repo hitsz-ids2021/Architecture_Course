@@ -22,15 +22,15 @@ linux > gcc -Wall -Og -rdynamic -o prog2r dll.c -ldl
 ```
 
 ### Files
-addvec.c 包含向量的加法操作
-multvec.c 包含向量的对应元素乘法
-main2.c 初始化数组array，并使用addvec函数做加法运算
-vector.h 包含addvec和multvec的函数声明的头文件
-dll.c 运行时动态链接的演示源程序,  使用dlopen加载链接需要的动态链接库，使用dlsym接口找到需要的符号位置 
-Makefile
+addvec.c 包含向量的加法操作  
+multvec.c 包含向量的对应元素乘法  
+main2.c 初始化数组array，并使用addvec函数做加法运算  
+vector.h 包含addvec和multvec的函数声明的头文件  
+dll.c 运行时动态链接的演示源程序,  使用dlopen加载链接需要的动态链接库，使用dlsym接口找到需要的符号位置   
+Makefile  
 
 ### Command
-本目录下的命令使用Makefile管理
-如需生成所有的文件，直接执行`linux > make all`
-清理所有中间文件，执行`linux > make clean`
-GCC 命令可参考Makefile
+本目录下的命令使用Makefile管理  
+如需生成所有的文件，直接执行`linux > make all`  
+清理所有中间文件，执行`linux > make clean`  
+GCC 命令可参考Makefile  
