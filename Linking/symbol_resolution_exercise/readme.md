@@ -12,15 +12,20 @@ linux > objdump -t m.o 		    > msym.d
 ```
 
 ### shell instruction 
-objdump 
-查看符号表： objdump -t xxx.so 。-T 和 -t 选项在于 -T 只能查看动态符号，如库导出的函数和引用其他库的函数，而 -t 可以查看所有的符号，包括数据段的符号
-objdump -t obj 输出目标文件的符号表()
-objdump -h obj 输出目标文件的所有段概括()
-objdump -j .text/.data -S obj 输出指定段的信息，大概就是反汇编源代码把
-objdump -S obj C语言与汇编语言同时显示
+objdump 使用说明
+   -d disassemble 反汇编所有可以反汇编的部分
+   -x 所有头部信息
+   -j 指定需要的节
+   -t symboltable 符号表信息
+       -T 和 -t 选项在于 -T 只能查看动态符号，如库导出的函数和引用其他库的函数，而 -t 可以查看所有的符号，包括数据段的符号
+   -r relocation 重定位信息, 可以查看.o文件的重定位信息
+   -h obj 输出目标文件的所有段概括()
+   -j 输出指定段的信息
+   -S 同时显示源文件（二进制）及反汇编信息
+
+关于objdump的用法详情可查看objdump --help
 
 ### File
-
 swap.c 
 m.c PPT上作为练习的示例程序
 Makefile 
