@@ -5,8 +5,8 @@ void show_pointer(void *x);
 void f(void);
 
 
-int y; 
 int x; 
+int y; 
 
 int main()  
 {

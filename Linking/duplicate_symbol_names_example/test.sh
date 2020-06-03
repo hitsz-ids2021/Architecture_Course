@@ -6,8 +6,8 @@ else if [ x$2 = x ];then
     else
         for((i=0;i<$2;i++));do
             out="foobar$1_${i}"
-            gcc -o tmp/$out "foo$1.c" "bar$1.c" show_bytes_b.c
-            tmp/$out
+            gcc -o tmp/$out "foo$1.c" "bar$1.c" show_bytes_b.c >> tmp/results.txt  2>&1
+            tmp/$out >> tmp/results.txt 2>&1
         done
     fi
 fi

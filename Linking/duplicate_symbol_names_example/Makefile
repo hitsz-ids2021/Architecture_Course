@@ -16,7 +16,7 @@ foobar2: foo2.o bar2.o
 foobar3: foo3.o bar3.o
 	$(CC) $(CFLAGS) -o foobar3 foo3.o bar3.o show_bytes_b.c
 foobar4: foo4.o bar4.o
-	$(CC) $(CFLAGS) -o foobar4 foo4.o bar4.o
+	$(CC) $(CFLAGS) -o foobar4 foo4.o bar4.o show_bytes_b.c
 foobar5: foo5.o bar5.o
 	$(CC) $(CFLAGS) -o foobar5 foo5.o bar5.o
 foobar6: foo6.o bar6.o 
@@ -24,4 +24,5 @@ foobar6: foo6.o bar6.o
 
 clean:
 	rm -f $(FOOBARS) *.o *~ *.d *.so *.a *.s
+	rm -f tmp/*
 
