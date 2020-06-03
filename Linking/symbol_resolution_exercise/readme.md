@@ -11,7 +11,13 @@ linux > objdump -t swap.o		> swapsym.d
 linux > objdump -t m.o 		    > msym.d
 ```
 
-
+### shell instruction 
+objdump 
+查看符号表： objdump -t xxx.so 。-T 和 -t 选项在于 -T 只能查看动态符号，如库导出的函数和引用其他库的函数，而 -t 可以查看所有的符号，包括数据段的符号
+objdump -t obj 输出目标文件的符号表()
+objdump -h obj 输出目标文件的所有段概括()
+objdump -j .text/.data -S obj 输出指定段的信息，大概就是反汇编源代码把
+objdump -S obj C语言与汇编语言同时显示
 
 ### File
 
