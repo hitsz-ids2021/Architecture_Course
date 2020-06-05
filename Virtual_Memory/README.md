@@ -7,3 +7,5 @@
 2. malloclab：一个动态内存分配实验
 > 具体实验步骤可以参考该文件夹中的malloclab的PDF
 > 实验中的代码介绍可以参考该文件夹中的README
+
+3.Rust：有关Rust的实验和几个例子
