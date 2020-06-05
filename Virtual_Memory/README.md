@@ -5,7 +5,7 @@
 > 注：因为只是malloc执行的示例所以没有编写main函数无法执行
 
 2. malloclab：一个动态内存分配实验
-> 具体实验步骤可以参考该文件夹中的malloclab的PDF
+> 具体实验步骤可以参考该文件夹中的malloclab的md
 > 实验中的代码介绍可以参考该文件夹中的README
 
 3.Rust：有关Rust的实验和几个例子
