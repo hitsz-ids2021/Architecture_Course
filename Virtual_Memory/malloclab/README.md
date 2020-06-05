@@ -1,44 +1,52 @@
+#####################################################################
+# CS:APP Malloc Lab
+# Handout files for students
+#
+# Copyright (c) 2002, R. Bryant and D. O'Hallaron, All rights reserved.
+# May not be used, modified, or copied without permission.
+#
+######################################################################
+
 ***********
-主要的文件:
+Main Files:
 ***********
 
 mm.{c,h}	
-	实现动态内存分配器的函数头文件及定义文件
+	Your solution malloc package. mm.c is the file that you
+	will be handing in, and is the only file you should modify.
 
 mdriver.c	
-	malloc测试驱动程序：用来测试编写的mm.c文件（本实验给出了隐式链表mm_implicit.c，显示链表mm_explicit.c,分离的空闲链表mm_segerated.c）
+	The malloc driver that tests your mm.c file
 
 short{1,2}-bal.rep
-	两个小的测试跟踪文件帮助你快速开始
-traces
-	更复杂的测试跟踪文件用于评测
+	Two tiny tracefiles to help you get started. 
 
 Makefile	
-	构建mdrvier
+	Builds the driver
 
 **********************************
-其他的支持mdriver的程序
+Other support files for the driver
 **********************************
 
-config.h	动态内存分配实验的相关配置
-fsecs.{c,h}	不同计时器包的包装函数
-clock.{c,h}	访问Pentium 和 Alpha 循环计数器的例行程序
-fcyc.{c,h}	基于循环计数器的计时器功能
-ftimer.{c,h}	基于间隔计时器和gettimeofday（）的计时器函数
-memlib.{c,h}	对堆和sbrk函数建模
+config.h	Configures the malloc lab driver
+fsecs.{c,h}	Wrapper function for the different timer packages
+clock.{c,h}	Routines for accessing the Pentium and Alpha cycle counters
+fcyc.{c,h}	Timer functions based on cycle counters
+ftimer.{c,h}	Timer functions based on interval timers and gettimeofday()
+memlib.{c,h}	Models the heap and sbrk function
 
 *******************************
-构建并运行driver
+Building and running the driver
 *******************************
-要构建mdriver，请在对应路径的shell中输入“make”
+To build the driver, type "make" to the shell.
 
-在一个小的测试跟踪文件上运行mdriver:
+To run the driver on a tiny test trace:
 
 	unix> mdriver -V -f short1-bal.rep
 
--V选项打印出有用的跟踪和摘要信息。
+The -V option prints out helpful tracing and summary information.
 
-获得mdriver的参数列表：
+To get a list of the driver flags:
 
 	unix> mdriver -h
 
