@@ -1,3 +1,4 @@
+# 链接
 ## 目录说明
 linking目录为计算机体系结构课程**链接**部分的演示实验目录，包含simple_linking_example, symbol_resolution_exercise, duplicate_symbol_names_example, example_static_and_dynamic_linking,library_interpositioning_demo五个演示实验。
 每个实验目录下包含所有用到的源代码，以及相应的readme介绍和Makefile文件（包含所有的编译、运行命令）

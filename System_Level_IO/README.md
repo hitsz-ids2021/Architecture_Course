@@ -1,6 +1,6 @@
-## 本目录包含I/O专题涉及到的代码，通过makefile文件可以编译
+# 系统级I/O
+> 本目录包含I/O专题涉及到的代码，通过makefile文件可以编译
 
-csapp.{c,h}  CS:APP 包装
 
 1. cpfile.c  使用RIO复制stdin到stdout
 
@@ -9,7 +9,7 @@ csapp.{c,h}  CS:APP 包装
 3. statcheck.c 获取文件元数据的示例
 
 4. fdprob1.c 关于文件打开关闭和文件描述符的练习
-> foo.txt
+> foo.txt  
 > baz.txt
  
 5. sharing1.c 文件共享的练习
